@@ -1,0 +1,8 @@
+[SUSE_CA]
+name=CA-Leap-42.2-SUSE-Internal
+enabled=1
+autorefresh=1
+baseurl=http://download.suse.de/ibs/SUSE:/CA/openSUSE_Leap_42.2/
+path=/
+type=rpm-md
+keeppackages=0

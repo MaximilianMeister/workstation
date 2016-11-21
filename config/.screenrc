@@ -1,0 +1,41 @@
+#######################################################################
+#
+# ~/.screenrc
+# Konfigurationsdatei fuer screen
+#
+########################################################################
+
+########################################################################
+# Variabeln
+setenv FOO bar
+#
+########################################################################
+# Allgemein
+startup_message  off   # Keine Willkommensnachricht
+vbell            off   # Kein visuelles Blinken
+msgwait 1              # Nachrichten für 1 Sekunden anzeigen
+defutf8          on    # utf8 bei neuen fenstern
+autodetach       on    # on = default
+shelltitle   'zsh'    # Fenstertitel
+hardcopydir $HOME      # Screenshots ins Homeverzeichnis
+defscrollback 10000    # Buffer
+defmonitor off         # Aktivitäten nicht in Fenstertitel schreiben
+shell "/usr/bin/zsh"
+
+bindkey "^H" prev  # change window with alt-left
+bindkey "^L" next  # change window with alt-right
+
+########################################################################
+# Meine Fenster
+screen -t zsh
+# screen -t irssi irssi
+# screen -t syslog sudo tail -f /var/log/everything.log
+# screen -t ncmpcpp ncmpcpp
+select 1
+select 0
+
+########################################################################
+# Statuszeile
+caption always "%{= wk} %-w%{= KW} [%n %t] %{-}%+w %= | @%H | %l | %Y-%m-%d %c "
+
+# EOF

@@ -1,0 +1,18 @@
+[user]
+  name = Maximilian Meister
+  email = mmeister@suse.de
+[alias]
+  co = checkout
+  ec = config --global -e
+  #up = pull --rebase --prune
+  cob = checkout -b
+  undo = reset HEAD~1 --mixed
+  ap = add --patch
+  com = commit -m
+  amend = commit --amend
+  up = remote -v update
+  s = status
+  ss = status -s
+  rem = remote -v show
+  tree = log --oneline --decorate --all --graph
+  stashdiff = stash show -p

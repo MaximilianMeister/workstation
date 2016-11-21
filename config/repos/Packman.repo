@@ -1,0 +1,8 @@
+[Packman]
+name=Packman Repository
+enabled=1
+autorefresh=1
+baseurl=http://ftp.gwdg.de/pub/linux/packman/suse/openSUSE_Leap_42.2/
+path=/
+type=rpm-md
+keeppackages=0

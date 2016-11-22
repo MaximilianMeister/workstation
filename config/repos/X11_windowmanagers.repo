@@ -5,4 +5,4 @@ autorefresh=0
 baseurl=http://download.opensuse.org/repositories/X11:/windowmanagers/openSUSE_Leap_42.1/
 type=rpm-md
 gpgcheck=1
-gpgkey=http://download.opensuse.org/repositories/X11:/windowmanagers/openSUSE_Leap_42.1//repodata/repomd.xml.key
+gpgkey=http://download.opensuse.org/repositories/X11:/windowmanagers/openSUSE_Leap_42.1/repodata/repomd.xml.key

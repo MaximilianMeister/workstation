@@ -57,3 +57,6 @@ other_package:
       - i3lock
       - alsa-utils
       - gnome-terminal
+      - ruby-devel
+      - libxml2-devel
+      - sqlite3-devel

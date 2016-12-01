@@ -91,7 +91,7 @@ tags = {
 }
 
 -- Screen 1
-tags[1] = awful.tag( { " CHROME " }, 2, { layouts[6] } )
+tags[1] = awful.tag( { " CHROMIUM " }, 2, { layouts[6] } )
 -- Screen 2
 tags[2] = awful.tag( tags.names, 1, tags.layout )
 -- }}}

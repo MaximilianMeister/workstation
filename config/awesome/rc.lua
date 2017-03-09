@@ -86,8 +86,8 @@ local layouts = {
 
 -- {{{ Tags
 tags = {
-   names = { " ATOM ", " TERM ", " IRC ", " MAIL ", " VM ", " MISC " },
-   layout = { layouts[6], layouts[3], layouts[6], layouts[6], layouts[6], layouts[3] }
+   names = { " VIM ", " TERM ", " IRC ", " MAIL ", " 1 ", " 2 ", " 3 " },
+   layout = { layouts[6], layouts[3], layouts[6], layouts[6], layouts[6], layouts[3], layouts[6] }
 }
 
 -- Screen 1
@@ -460,7 +460,7 @@ globalkeys = awful.util.table.join(
     awful.key({ altkey }, "p", function() os.execute("screenshot") end),
 
     -- Lock the screen
-    awful.key({ modkey }, "l",   function() os.execute("i3lock") end ),
+    awful.key({ modkey }, "l",   function() os.execute("lockmyi3") end ),
 
     -- Tag browsing
     awful.key({ modkey }, "Left",   awful.tag.viewprev       ),

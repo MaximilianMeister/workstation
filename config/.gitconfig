@@ -1,6 +1,7 @@
 [user]
   name = Maximilian Meister
   email = mmeister@suse.de
+  signingkey = 673B2117
 [alias]
   co = checkout
   ec = config --global -e
@@ -16,3 +17,6 @@
   rem = remote -v show
   tree = log --oneline --decorate --all --graph
   stashdiff = stash show -p
+  cos = commit -s
+[commit]
+  gpgsign = true

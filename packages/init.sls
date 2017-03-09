@@ -61,3 +61,4 @@ other_package:
       - ruby-devel
       - libxml2-devel
       - sqlite3-devel
+      - ImageMagick

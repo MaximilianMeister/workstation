@@ -51,6 +51,7 @@ end
 run_once("urxvtd")
 run_once("unclutter -root")
 run_once("parcellite")
+run_once("guake")
 run_once("xrandr --output DisplayPort-0 --mode 1920x1080 --left-of DVI-0 --output DVI-0 --mode 1920x1080")
 -- }}}
 

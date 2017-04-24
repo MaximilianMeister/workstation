@@ -62,3 +62,4 @@ other_package:
       - libxml2-devel
       - sqlite3-devel
       - ImageMagick
+      - guake

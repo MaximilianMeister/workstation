@@ -1,9 +1,9 @@
 [X11_Utilities]
-name=X11 Utilities (openSUSE_Leap_42.2)
+name=X11 Utilities (openSUSE_Leap_42.3)
 enabled=1
 autorefresh=0
-baseurl=http://download.opensuse.org/repositories/X11:/Utilities/openSUSE_Leap_42.2/
+baseurl=http://download.opensuse.org/repositories/X11:/Utilities/openSUSE_Leap_42.3/
 type=rpm-md
 gpgcheck=1
-gpgkey=http://download.opensuse.org/repositories/X11:/Utilities/openSUSE_Leap_42.2/repodata/repomd.xml.key
+gpgkey=http://download.opensuse.org/repositories/X11:/Utilities/openSUSE_Leap_42.3/repodata/repomd.xml.key
 keeppackages=0

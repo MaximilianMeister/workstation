@@ -47,3 +47,35 @@ oh-my-zsh:
     - unless: test -d /home/mmeister/.oh-my-zsh
     - require:
       - user: mmeister
+
+nerdtree:
+  cmd.run:
+    - name: |
+        git clone https://github.com/scrooloose/nerdtree.git ~/.vim/bundle/nerdtree; \
+        chown -R mmeister:users /home/mmeister/.vim/bundle/nerdtree
+    - unless: test -d /home/mmeister/.vim/bundle/nerdtree
+    - require:
+      - user: mmeister
+
+ctrlp:
+  cmd.run:
+    - name: |
+        git clone https://github.com/kien/ctrlp.vim.git ~/.vim/bundle/ctrlp.vim; \
+        chown -R mmeister:users /home/mmeister/.vim/bundle/ctrlp.vim
+    - unless: test -d /home/mmeister/.vim/bundle/ctrlp.vim
+    - require:
+      - user: mmeister
+
+papercolor-vim:
+  cmd.run:
+    - name: |
+        mkdir -p ~/.vim/colors; \
+        curl https://raw.githubusercontent.com/NLKNguyen/papercolor-theme/master/colors/PaperColor.vim > /home/mmeister/.vim/colors/PaperColor.vim
+    - unless: test -f /home/mmeister/.vim/colors/PaperColor.vim
+    - require:
+      - user: mmeister
+
+papercolor-gnome-terminal:
+  cmd.run:
+    - name: |
+        curl https://raw.githubusercontent.com/NLKNguyen/papercolor-16/master/gnome-terminal/base16-papercolor-light.sh | bash

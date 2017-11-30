@@ -2,7 +2,7 @@
 :syntax on
 set nu
 
-set bg=dark
+"set bg=dark
 set tabstop=2
 set shiftwidth=2
 set expandtab
@@ -22,8 +22,17 @@ autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
 " ctrl-n explorer
 map <C-n> :NERDTreeToggle<CR>
+"let g:NERDTreeWinPos = "right"
+let g:NERDTreeWinSize=40
 
 " ctrl-s save
 noremap <silent> <C-S>          :update<CR>
 vnoremap <silent> <C-S>         <C-C>:update<CR>
 inoremap <silent> <C-S>         <C-O>:update<CR>
+
+" open (and close) split window in new tab
+noremap tt :tab split<CR>
+noremap TT :tabc<CR>
+
+" colors
+colorscheme PaperColor

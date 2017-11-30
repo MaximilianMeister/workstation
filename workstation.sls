@@ -78,4 +78,4 @@ papercolor-vim:
 papercolor-gnome-terminal:
   cmd.run:
     - name: |
-        curl https://raw.githubusercontent.com/NLKNguyen/papercolor-16/master/gnome-terminal/base16-papercolor-light.sh | bash
+        curl https://raw.githubusercontent.com/NLKNguyen/papercolor-16/master/gnome-terminal/base16-papercolor-light.sh | sed 's/gconftool/gconftool-2/g' | bash

@@ -31,4 +31,4 @@
 
 refresh:
   cmd.run:
-    - name: "zypper --gpg-auto-import-keys refresh"
+    - name: "zypper -n --gpg-auto-import-keys refresh"

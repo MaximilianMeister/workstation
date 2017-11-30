@@ -47,7 +47,6 @@ other_package:
   pkg.installed:
     - pkgs:
       - chromium
-      - chromium-pepper-flash
       - patch
       - gcc
       - make

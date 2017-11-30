@@ -43,10 +43,6 @@ awesome_package:
       - awesome-shifty
       - awesome-vicious
 
-ca-certificates:
-  pkg.installed:
-    - name: ca-cerificates-suse
-
 other_package:
   pkg.installed:
     - pkgs:

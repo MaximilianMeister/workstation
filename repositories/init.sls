@@ -19,12 +19,6 @@
   file.managed:
     - source: salt://config/repos/Packman.repo
 
-/etc/zypp/repos.d/SUSE_CA.repo:
-  file.managed:
-    - source: salt://config/repos/SUSE_CA.repo
-    - require_in:
-      - pkg: ca-certificates
-
 /etc/zypp/repos.d/X11_Utilities.repo:
   file.managed:
     - source: salt://config/repos/X11_Utilities.repo

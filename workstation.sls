@@ -33,7 +33,7 @@ mmeister:
     - fullname: Maximilian Meister
     - shell: /bin/zsh
     - home: /home/mmeister
-    - uid: 16983
+    #- uid: 16983
     - gid: 100 # users
     - groups:
       - users

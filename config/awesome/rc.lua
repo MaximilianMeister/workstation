@@ -87,7 +87,7 @@ local layouts = {
 
 -- {{{ Tags
 tags = {
-   names = { " VIM ", " TERM ", " IRC ", " MAIL ", " 1 ", " 2 ", " 3 " },
+   names = { " WWW ", " VIM ", " TERM ", " IRC ", " MAIL ", " 1 ", " 2 " },
    layout = { layouts[6], layouts[3], layouts[6], layouts[6], layouts[6], layouts[3], layouts[6] }
 }
 

@@ -40,9 +40,9 @@
     - group: users
     - mode: 644
 
-/home/mmeister/.config/awesome:
+/home/mmeister/.config/i3:
   file.recurse:
-    - source: salt://config/awesome
+    - source: salt://config/i3
     - user: mmeister
     - group: users
     - dir_mode: 755

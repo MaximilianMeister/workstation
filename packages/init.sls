@@ -29,19 +29,12 @@ go_package:
     - require_in:
       - run: go_env
 
-awesome_package:
+i3_package:
   pkg.installed:
     - pkgs:
-      - awesome
-      - awesome-branding-upstream
-      - awesome-copycats-themes
-      - awesome-eminent
-      - awesome-freedesktop
-      - awesome-lain
-      - awesome-menugen
-      - awesome-scratchdrop
-      - awesome-shifty
-      - awesome-vicious
+      - i3
+      - i3lock
+      - i3status
 
 other_package:
   pkg.installed:
@@ -50,7 +43,6 @@ other_package:
       - patch
       - gcc
       - make
-      - i3lock
       - alsa-utils
       - gnome-terminal
       - ruby-devel

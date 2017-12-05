@@ -27,7 +27,7 @@
   file.managed:
     - source: salt://config/repos/X11_windowmanagers.repo
     - require_in:
-      - pkg: awesome_package
+      - pkg: i3_package
 
 refresh:
   cmd.run:

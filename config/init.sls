@@ -48,6 +48,13 @@
     - dir_mode: 755
     - file_mode: 644
 
+/home/mmeister/.config/i3/scripts/i3exit:
+  file.managed:
+    - source: salt://config/i3/scripts/i3exit
+    - user: mmeister
+    - group: users
+    - mode: 755
+
 /home/mmeister/.xinitrc:
   file.managed:
     - source: salt://config/.xinitrc

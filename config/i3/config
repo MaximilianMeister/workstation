@@ -26,6 +26,36 @@ font pango:monospace 8
 # X core fonts rendering does not support right-to-left and this being a bitmap
 # font, it doesn’t scale on retina/hidpi displays.
 
+# new window border width
+new_window pixel 1
+new_float pixel 1
+
+# info for actions
+set $mode_system System (l) lock, (o) logout, (s) suspend, (h) hibernate, (r) reboot, (x) shutdown
+
+# state option mode
+mode "$mode_system" {
+  bindsym o exec --no-startup-id ~/.config/i3/scripts/i3exit logout, mode "default"
+  bindsym l exec --no-startup-id ~/.config/i3/scripts/i3exit lock, mode "default"
+  bindsym s exec --no-startup-id ~/.config/i3/scripts/i3exit suspend, mode "default"
+  bindsym h exec --no-startup-id ~/.config/i3/scripts/i3exit hibernate, mode "default"
+  bindsym r exec --no-startup-id ~/.config/i3/scripts/i3exit reboot, mode "default"
+  bindsym x exec --no-startup-id ~/.config/i3/scripts/i3exit shutdown, mode "default"
+
+  bindsym Return mode "default"
+  bindsym Escape mode "default"
+}
+
+# enter state mode
+bindsym $mod+e mode "$mode_system"
+
+# define colors
+# class     border  backgr. text  indicator
+client.focused    #4c7899 #285577 #ffffff #2e9ef4
+client.focused_inactive #333333 #5f676a #ffffff #484e50
+client.unfocused  #333333 #222222 #888888 #292d2e
+client.urgent   #2f343a #900000 #ffffff #900000
+
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
@@ -77,8 +107,8 @@ bindsym $mod+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
 bindsym $mod+s layout stacking
-bindsym $mod+w layout tabbed
-bindsym $mod+e layout toggle split
+bindsym $mod+t layout tabbed
+bindsym $mod+w layout toggle split
 
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle

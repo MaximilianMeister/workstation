@@ -3,4 +3,4 @@
     - source: salt://bin/lockmyi3
     - user: mmeister
     - group: users
-    - mode: 655
+    - mode: 755

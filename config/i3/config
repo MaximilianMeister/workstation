@@ -151,7 +151,7 @@ bindsym Ctrl+Shift+k workspace prev
 bindsym Ctrl+Shift+j workspace next
 
 # custom clients on workspaces
-assign [class="^Chromium-browser$"] 1:inet
+assign [class="^Chromium-browser$"] 1:www
 assign [class="^Gvim$"] 2:vim
 assign [class="^Gnome-terminal$"] 3:term
 assign [class="^Hexchat$"] 4:irc

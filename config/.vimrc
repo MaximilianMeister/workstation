@@ -24,6 +24,7 @@ autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 map <C-n> :NERDTreeToggle<CR>
 "let g:NERDTreeWinPos = "right"
 let g:NERDTreeWinSize=40
+let g:NERDTreeQuitOnOpen=1
 
 " ctrl-s save
 noremap <silent> <C-S>          :update<CR>

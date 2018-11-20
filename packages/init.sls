@@ -29,12 +29,10 @@ go_package:
     - require_in:
       - run: go_env
 
-i3_package:
+sway_package:
   pkg.installed:
     - pkgs:
-      - i3
-      - i3lock
-      - i3status
+      - sway
 
 other_package:
   pkg.installed:

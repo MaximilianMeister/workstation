@@ -40,38 +40,17 @@
     - group: users
     - mode: 644
 
-/home/mmeister/.config/i3:
+/home/mmeister/.config/sway:
   file.recurse:
-    - source: salt://config/i3
+    - source: salt://config/sway
     - user: mmeister
     - group: users
     - dir_mode: 755
     - file_mode: 644
 
-/home/mmeister/.config/i3/scripts/i3exit:
+/home/mmeister/.config/sway/scripts/swayexit:
   file.managed:
-    - source: salt://config/i3/scripts/i3exit
+    - source: salt://config/sway/scripts/swayexit
     - user: mmeister
     - group: users
     - mode: 755
-
-/home/mmeister/.xinitrc:
-  file.managed:
-    - source: salt://config/.xinitrc
-    - user: mmeister
-    - group: users
-    - mode: 644
-
-/etc/sysconfig/windowmanager:
-  file.managed:
-    - source: salt://config/windowmanager
-    - user: root
-    - group: root
-    - mode: 644
-
-/etc/X11/xdm/xdm-config:
-  file.managed:
-    - source: salt://config/xdm-config
-    - user: root
-    - group: root
-    - mode: 644

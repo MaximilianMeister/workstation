@@ -32,7 +32,7 @@ go_package:
 i3_package:
   pkg.installed:
     - pkgs:
-      - i3
+      - i3-gaps
       - i3lock
       - i3status
 

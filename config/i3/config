@@ -328,7 +328,9 @@ exec --no-startup-id /usr/bin/nm-applet
 
 exec --no-startup-id xautolock -time 5 -locker '~/.config/i3/scripts/i3exit lock' -secure
 
-exec --no-startup-id /usr/bin/nextcloud-client
+exec --no-startup-id /usr/bin/nextcloud
+
+exec --no-startup-id /usr/lib/polkit-gnome-authentication-agent-1 &
 
 #
 # END custom

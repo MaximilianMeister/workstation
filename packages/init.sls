@@ -50,3 +50,4 @@ other_package:
       - sqlite3-devel
       - nextcloud-client
       - rofi
+      - feh

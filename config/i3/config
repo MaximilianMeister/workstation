@@ -322,13 +322,22 @@ mode "$mode_system" {
 # enter state mode
 bindsym $mod+y mode "$mode_system"
 
+# set background
 exec --no-startup-id feh --bg-tile ~/.config/i3/images/wallpaper.png
 
-exec --no-startup-id /usr/bin/nm-applet
-
+# screen saver
 exec --no-startup-id xautolock -time 5 -locker '~/.config/i3/scripts/i3exit lock' -secure
 
+# set mouse speed
+# exec --no-startup-id xset m 4/2 0
+
+# disable system bell
+exec --no-startup-id xset b off
+
+# run applications
 exec --no-startup-id /usr/bin/nextcloud
+
+exec --no-startup-id /usr/bin/nm-applet
 
 exec --no-startup-id /usr/lib/polkit-gnome-authentication-agent-1 &
 

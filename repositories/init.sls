@@ -1,7 +1,7 @@
 # repositories
 /etc/zypp/repos.d/packman.repo:
   file.managed:
-    - source: salt://config/repos/packman.repo
+    - source: salt://config/etc/zypp/repos.d/packman.repo
 
 refresh:
   cmd.run:

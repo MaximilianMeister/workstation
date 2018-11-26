@@ -54,3 +54,10 @@
     - user: mmeister
     - group: users
     - mode: 755
+
+/usr/share/X11/xorg.conf.d/40-libinput.conf:
+  file.managed:
+    - source: salt://config/usr/share/X11/xorg.conf.d/40-libinput.conf
+    - user: root
+    - group: root
+    - mode: 644

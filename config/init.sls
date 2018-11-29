@@ -48,6 +48,14 @@
     - dir_mode: 755
     - file_mode: 644
 
+/home/mmeister/.config/i3status:
+  file.recurse:
+    - source: salt://config/home/mmeister/.config/i3status
+    - user: mmeister
+    - group: users
+    - dir_mode: 755
+    - file_mode: 644
+
 /home/mmeister/.config/i3/scripts/i3exit:
   file.managed:
     - source: salt://config/home/mmeister/.config/i3/scripts/i3exit

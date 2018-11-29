@@ -84,7 +84,7 @@ bindsym $mod+e layout toggle split
 bindsym $mod+Shift+space floating toggle
 
 # change focus between tiling / floating windows
-bindsym $mod+space focus mode_toggle
+# bindsym $mod+space focus mode_toggle
 
 # focus the parent container
 bindsym $mod+a focus parent
@@ -299,12 +299,15 @@ gaps inner 10
 
 for_window [class="^.*"] border pixel 0
 
+# rofi
 bindsym $mod+r exec "rofi -show-icons -modi combi -show combi -combi-modi window,drun,run"
+bindsym $mod+space exec "rofi -show-icons -modi combi -show combi -combi-modi window,drun,run"
 
 focus_follows_mouse no
 
 # info for actions
 set $mode_system System (l) lock, (o) logout, (s) suspend, (h) hibernate, (r) reboot, (x) shutdown
+
 
 # state option mode
 mode "$mode_system" {

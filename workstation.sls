@@ -51,6 +51,7 @@ oh-my-zsh:
 nerdtree:
   cmd.run:
     - name: |
+        mkdir -p ~/.vim/bundle; \
         git clone https://github.com/scrooloose/nerdtree.git ~/.vim/bundle/nerdtree; \
         chown -R mmeister:users /home/mmeister/.vim/bundle/nerdtree
     - unless: test -d /home/mmeister/.vim/bundle/nerdtree
@@ -60,6 +61,7 @@ nerdtree:
 ctrlp:
   cmd.run:
     - name: |
+        mkdir -p ~/.vim/bundle; \
         git clone https://github.com/kien/ctrlp.vim.git ~/.vim/bundle/ctrlp.vim; \
         chown -R mmeister:users /home/mmeister/.vim/bundle/ctrlp.vim
     - unless: test -d /home/mmeister/.vim/bundle/ctrlp.vim

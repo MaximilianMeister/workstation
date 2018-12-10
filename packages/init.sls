@@ -51,3 +51,4 @@ other_package:
       - nextcloud-client
       - rofi
       - feh
+      - scrot

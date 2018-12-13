@@ -344,6 +344,10 @@ exec --no-startup-id /usr/bin/nm-applet
 
 exec --no-startup-id /usr/lib/polkit-gnome-authentication-agent-1 &
 
+exec --no-startup-id /home/mmeister/.config/i3/scripts/keyring
+
+exec --no-startup-id /home/mmeister/.config/i3/scripts/display
+
 # alsa
 bindsym XF86AudioRaiseVolume exec amixer -q set Master 3%+ unmute
 bindsym XF86AudioLowerVolume exec amixer -q set Master 3%- unmute

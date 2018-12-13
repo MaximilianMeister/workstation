@@ -52,3 +52,9 @@ other_package:
       - rofi
       - feh
       - scrot
+      - polkit-gnome
+      - seahorse
+      - libgnome-keyring
+      - notify-osd
+      - notify-osd-config
+      - openvpn

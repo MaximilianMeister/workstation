@@ -63,6 +63,20 @@
     - group: users
     - mode: 755
 
+/home/mmeister/.config/i3/scripts/keyring:
+  file.managed:
+    - source: salt://config/home/mmeister/.config/i3/scripts/keyring
+    - user: mmeister
+    - group: users
+    - mode: 755
+
+/home/mmeister/.config/i3/scripts/display:
+  file.managed:
+    - source: salt://config/home/mmeister/.config/i3/scripts/display
+    - user: mmeister
+    - group: users
+    - mode: 755
+
 /usr/share/X11/xorg.conf.d/40-libinput.conf:
   file.managed:
     - source: salt://config/usr/share/X11/xorg.conf.d/40-libinput.conf

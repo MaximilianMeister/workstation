@@ -1,0 +1,5 @@
+#!/bin/bash
+
+if [[ $(xrandr | grep -q "DP-1-2 connected") -eq 0 ]]; then
+  xrandr --output eDP-1 --rate 60 --mode 1920x1080 --fb 1920x1080 --panning 1920x1080* --output DP-1-2 --mode 1920x1080 --same-as eDP-1 
+fi

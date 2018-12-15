@@ -306,15 +306,16 @@ bindsym $mod+space exec "rofi -show-icons -modi combi -show combi -combi-modi wi
 focus_follows_mouse no
 
 # info for actions
-set $mode_system System (l) lock, (o) logout, (s) suspend, (h) hibernate, (r) reboot, (x) shutdown
+set $mode_system System (l) lock, (o) logout, (r) reboot, (x) shutdown
+#set $mode_system System (l) lock, (o) logout, (s) suspend, (h) hibernate, (r) reboot, (x) shutdown
 
 
 # state option mode
 mode "$mode_system" {
   bindsym o exec --no-startup-id ~/.config/i3/scripts/i3exit logout, mode "default"
   bindsym l exec --no-startup-id ~/.config/i3/scripts/i3exit lock, mode "default"
-  bindsym s exec --no-startup-id ~/.config/i3/scripts/i3exit suspend, mode "default"
-  bindsym h exec --no-startup-id ~/.config/i3/scripts/i3exit hibernate, mode "default"
+  #bindsym s exec --no-startup-id ~/.config/i3/scripts/i3exit suspend, mode "default"
+  #bindsym h exec --no-startup-id ~/.config/i3/scripts/i3exit hibernate, mode "default"
   bindsym r exec --no-startup-id ~/.config/i3/scripts/i3exit reboot, mode "default"
   bindsym x exec --no-startup-id ~/.config/i3/scripts/i3exit shutdown, mode "default"
 

@@ -54,7 +54,7 @@ other_package:
       - scrot
       - polkit-gnome
       - seahorse
-      - libgnome-keyring
       - notify-osd
       - notify-osd-config
       - openvpn
+      #- libgnome-keyring

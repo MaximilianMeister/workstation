@@ -58,3 +58,7 @@ other_package:
       - notify-osd-config
       - openvpn
       #- libgnome-keyring
+      - xautolock
+      - zsh
+      - fontawesome-fonts
+      - fontawesome-fonts-web

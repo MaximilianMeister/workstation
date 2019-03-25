@@ -37,3 +37,6 @@ noremap TT :tabc<CR>
 
 " colors
 colorscheme PaperColor
+
+" vimgrep search recursively for word under the cursor
+map <F4> :execute "vimgrep /" . expand("<cword>") . "/j **" <Bar> cw<CR>

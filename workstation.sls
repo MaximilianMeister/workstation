@@ -51,8 +51,8 @@ oh-my-zsh:
 nerdtree:
   cmd.run:
     - name: |
-        mkdir -p ~/.vim/bundle; \
-        git clone https://github.com/scrooloose/nerdtree.git ~/.vim/bundle/nerdtree; \
+        mkdir -p /home/mmeister/.vim/bundle; \
+        git clone https://github.com/scrooloose/nerdtree.git /home/mmeister/.vim/bundle/nerdtree; \
         chown -R mmeister:users /home/mmeister/.vim/bundle/nerdtree
     - unless: test -d /home/mmeister/.vim/bundle/nerdtree
     - require:
@@ -61,8 +61,8 @@ nerdtree:
 ctrlp:
   cmd.run:
     - name: |
-        mkdir -p ~/.vim/bundle; \
-        git clone https://github.com/kien/ctrlp.vim.git ~/.vim/bundle/ctrlp.vim; \
+        mkdir -p /home/mmeister/.vim/bundle; \
+        git clone https://github.com/kien/ctrlp.vim.git /home/mmeister/.vim/bundle/ctrlp.vim; \
         chown -R mmeister:users /home/mmeister/.vim/bundle/ctrlp.vim
     - unless: test -d /home/mmeister/.vim/bundle/ctrlp.vim
     - require:
@@ -71,7 +71,7 @@ ctrlp:
 papercolor-vim:
   cmd.run:
     - name: |
-        mkdir -p ~/.vim/colors; \
+        mkdir -p /home/mmeister/.vim/colors; \
         curl https://raw.githubusercontent.com/NLKNguyen/papercolor-theme/master/colors/PaperColor.vim > /home/mmeister/.vim/colors/PaperColor.vim
     - unless: test -f /home/mmeister/.vim/colors/PaperColor.vim
     - require:

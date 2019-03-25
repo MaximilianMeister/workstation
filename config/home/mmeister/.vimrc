@@ -24,7 +24,7 @@ autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 map <C-n> :NERDTreeToggle<CR>
 "let g:NERDTreeWinPos = "right"
 let g:NERDTreeWinSize=40
-let g:NERDTreeQuitOnOpen=1
+"let g:NERDTreeQuitOnOpen=1
 
 " ctrl-s save
 noremap <silent> <C-S>          :update<CR>
@@ -40,3 +40,10 @@ colorscheme PaperColor
 
 " vimgrep search recursively for word under the cursor
 map <F4> :execute "vimgrep /" . expand("<cword>") . "/j **" <Bar> cw<CR>
+
+" automatically open quickfix list for search results with vimgre etc
+augroup quickfixlist
+    autocmd!
+    autocmd QuickFixCmdPost [^l]* cwindow
+    autocmd QuickFixCmdPost l*    lwindow
+augroup END

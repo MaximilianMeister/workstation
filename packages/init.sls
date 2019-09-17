@@ -40,6 +40,7 @@ other_package:
   pkg.installed:
     - pkgs:
       - chromium
+      - firefox
       - patch
       - gcc
       - make

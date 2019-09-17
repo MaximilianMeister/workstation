@@ -68,16 +68,16 @@ ctrlp:
     - require:
       - user: mmeister
 
-papercolor-vim:
-  cmd.run:
-    - name: |
-        mkdir -p /home/mmeister/.vim/colors; \
-        curl https://raw.githubusercontent.com/NLKNguyen/papercolor-theme/master/colors/PaperColor.vim > /home/mmeister/.vim/colors/PaperColor.vim
-    - unless: test -f /home/mmeister/.vim/colors/PaperColor.vim
-    - require:
-      - user: mmeister
+#papercolor-vim:
+#  cmd.run:
+#    - name: |
+#        mkdir -p /home/mmeister/.vim/colors; \
+#        curl https://raw.githubusercontent.com/NLKNguyen/papercolor-theme/master/colors/PaperColor.vim > /home/mmeister/.vim/colors/PaperColor.vim
+#    - unless: test -f /home/mmeister/.vim/colors/PaperColor.vim
+#    - require:
+#      - user: mmeister
 
-papercolor-gnome-terminal:
-  cmd.run:
-    - name: |
-        curl https://raw.githubusercontent.com/NLKNguyen/papercolor-16/master/gnome-terminal/base16-papercolor-light.sh | sed 's/gconftool/gconftool-2/g' | bash
+#papercolor-gnome-terminal:
+#  cmd.run:
+#    - name: |
+#        curl https://raw.githubusercontent.com/NLKNguyen/papercolor-16/master/gnome-terminal/base16-papercolor-light.sh | sed 's/gconftool/gconftool-2/g' | bash
